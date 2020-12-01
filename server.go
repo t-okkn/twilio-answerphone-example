@@ -59,7 +59,7 @@ func responseAnswerPhone(c *gin.Context) {
 	}
 
 	datetime := time.Now().Format("2006/01/02 15:04:05")
-	// メッセージを送信する機能の関数ポインタを入れ込む
+	// メッセージを送信する機能の関数を入れ込む
 	sendmsg := sendLineMessage
 	// sendmsg := sendSlackMessage
 	// sendmsg := sendMail
