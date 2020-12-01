@@ -18,7 +18,7 @@ func SetupRouter() *gin.Engine {
 	router := gin.Default()
 
 	// ルーティングの定義
-	router.POST("/phonebot/v1/answerphone", responseAnswerPhone)
+	router.POST("/answerphone", responseAnswerPhone)
 
 	 return router
 }
